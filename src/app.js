@@ -3,8 +3,8 @@ import express from "express";
 
 const app = express();
 
-app.post("/Testing", (req, res) => {
-    return res.send("Hello World!");
+app.get("/Testing", (req, res) => {
+    return res.send("<h1>Hello World!</h1>");
 });
 
 export default app;
