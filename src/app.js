@@ -1,8 +1,10 @@
+
 import express from "express";
 
 const app = express();
 
-
-app.get("/Testing",(req, res)=>{return "Hello World!"})
+app.post("/Testing", (req, res) => {
+    return res.send("Hello World!");
+});
 
 export default app;
